@@ -51,7 +51,8 @@ nav a:hover{
 .banner {
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
-    -webkit-background-size:cover;
+    background-size: cover;
+    -webkit-transform: tranlate3d(0,0,0);
     background-position: center;
     background-attachment: fixed;
     min-height: 700px;
