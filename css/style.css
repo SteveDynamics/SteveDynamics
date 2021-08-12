@@ -11,35 +11,7 @@ body {
     min-width: 882px;
 }
 
-.companybody h1{
-    background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue);
-    text-align: center;
-    background-repeat: no-repeat;
-    -webkit-animation: CompanyAn 7s ease infinite;
-    -moz-animation: CompanyAn 7s ease infinite;
-    animation: CompanyAn 7s ease infinite;
-    background-size: 800% 800%;
 
-    font-size: 4rem;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@-webkit-keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
-}
-@-moz-keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
-}
-@keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
-}
 /* TODO:ADD MEDIA QUERY */
 
 
@@ -261,5 +233,6 @@ a.learn-more{
 footer {
     height: 200px;
     width: 100%;
-    background-color:hsla(205,60%,25%);
+    background-color:#060e30;
+    background-image: linear-gradient(100deg, #060e30,#5aa7de)
 }
