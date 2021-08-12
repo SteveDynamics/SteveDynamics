@@ -10,6 +10,36 @@ body {
     padding: 0;
     min-width: 882px;
 }
+
+.companybody h1{
+    background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue);
+    text-align: center;
+    background-repeat: no-repeat;
+    -webkit-animation: CompanyAn 7s ease infinite;
+    -moz-animation: CompanyAn 7s ease infinite;
+    animation: CompanyAn 7s ease infinite;
+    background-size: 800% 800%;
+
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes CompanyAn{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 50% 0%}
+}
+@-moz-keyframes CompanyAn{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 50% 0%}
+}
+@keyframes CompanyAn{
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 50% 0%}
+}
 /* TODO:ADD MEDIA QUERY */
 
 
@@ -41,9 +71,28 @@ nav {
     height: 70px;
     position: static;
     overflow: hidden;
-
+    background-image: linear-gradient(to right, rgb(255, 255, 255), #b2dfff);
+    background-size: 200% 100%;
+    -webkit-animation: NavGradient 10s ease infinite;
+    -moz-animation: NavGradient 10s ease infinite;
+    animation: NavGradient 10s ease infinite;
 }
-
+/*nav bar gradient animation */
+@-webkit-keyframes NavGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes NavGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes NavGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 nav a{
     float: right;
@@ -187,11 +236,12 @@ a.learn-more-btn:hover {
 
 .p-box {
     border: 2px solid rgb(204, 204, 204);
-    background-color: rgb(232, 238, 240);
+    background-image: linear-gradient(120deg, white, rgba(128, 128, 128, 0.294));
     height: 700px;
     max-width: 500px;
     margin: 15px;
     transition: all .3s ease-in-out;
+    
 }
 
 .p-box:hover {
@@ -230,5 +280,5 @@ a.learn-more{
 footer {
     height: 200px;
     width: 100%;
-    background-image: linear-gradient(130deg, rgb(4, 17, 93), rgb(36, 145, 255));
+    background-color:hsla(205,60%,25%);
 }
