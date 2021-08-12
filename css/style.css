@@ -122,6 +122,11 @@ nav a:hover{
     border: 2px solid white;
     border-radius: 10px;
     transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.learn-more-btn:active {
+    background-color:#96c1e0;
 }
 
 a.learn-more-btn:hover {
