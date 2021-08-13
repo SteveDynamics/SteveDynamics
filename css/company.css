@@ -36,27 +36,9 @@ main h2{
 .f-img {
     max-width: 200px;
     max-height: 200px;
-    border: 2px solid transparent;
-    border-radius: 200px;
-    -webkit-background-clip:border-box;
-    -webkit-animation: CompanyAn 8s ease infinite;
-    -moz-animation: CompanyAn 8s ease infinite;
-    animation: CompanyAn 8s ease infinite;
-    background-image: linear-gradient(90deg, red,orange,yellow,blue, red);
-    background-size: 800% 800%;
-}
-@-webkit-keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
-}
-@-moz-keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
-}
-@keyframes CompanyAn{
-    0%{background-position: 0% 50%}
-    50%{background-position: 100% 50%}
-    100%{background-position: 50% 0%}
+    
+    border: 1px solid transparent;
+    border-radius: 100%;
+
+    background-image: linear-gradient( rgba(63,94,251,1) 0%, rgb(255, 6, 27) 100%);
 }

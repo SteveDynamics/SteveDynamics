@@ -123,18 +123,18 @@ nav a:hover{
     margin-left: 30px;
     border: 2px solid white;
     border-radius: 10px;
-    transition: all .2s ease-in-out;
-    text-decoration: none;
-}
+    /*transition: all .2s ease-in-out;*/
 
-.learn-more-btn:active {
-    background-color:#96c1e0;
+    text-decoration: none;
 }
 
 a.learn-more-btn:hover {
     color:#5aa7de;
     background-color: white;
 }
+
+
+
 /* img strip */
 .img-strip-background {
     background-image: url('../images/img-strip-background.gif');
@@ -234,5 +234,18 @@ footer {
     height: 200px;
     width: 100%;
     background-color:#060e30;
-    background-image: linear-gradient(100deg, #060e30,#5aa7de)
+    background-image: linear-gradient(100deg, #060e30,#5aa7de);
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(10, 1fr);
+}
+
+.col-copyright {
+    grid-area: 4 / 1 / 4 / span 9;
+}
+
+
+.bottom-footer{
+    display: inline;
+    vertical-align: bottom;
+    
 }
