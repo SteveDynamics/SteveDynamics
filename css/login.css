@@ -1,0 +1,27 @@
+body {
+    
+    background-color:#5aa7de;
+}
+
+.cc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.login-container {
+    padding: 100px;
+    width: 200px;
+    height: 400px;
+    background-color: #dceffd;
+    border: 5px solid rgba(0, 0, 0, 0.685);
+    border-radius: 25px;
+    font-family: Georama;
+}
+
+
+input {
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+}

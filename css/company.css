@@ -36,9 +36,8 @@ main h2{
 .f-img {
     max-width: 200px;
     max-height: 200px;
-    
-    border: 1px solid transparent;
+    padding: 10px;
+    border: 1px solid black;
     border-radius: 100%;
 
-    background-image: linear-gradient( rgba(63,94,251,1) 0%, rgb(255, 6, 27) 100%);
 }
