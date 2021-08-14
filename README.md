@@ -1,4 +1,3 @@
 # SteveDynamics
-A test website
-This website will be used to test my knowledge of html/css/javascript etc.
-Nothing in this website is real
+A website used to practice.
+stevedynamics.github.io to see the site live
