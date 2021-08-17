@@ -2,8 +2,8 @@
     font-family: Georama;
 }
 .alert-container {
-    background-color: rgb(255, 196, 196);
-    border: 2px dotted red;
+    background-color: green;
+    border: 2px dotted green;
     width: 300px;
     text-align:center;
     margin: 40px auto;
