@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+}
+
+.head-h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    text-align: left;
+    line-height: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--border-color);
+    transition: color .15s ease-in-out;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--border-color);
+    transition: color .15s ease-in-out;
+}
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
+    margin-top: -21px;
+    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+
+
+header {
+    padding: 1rem;
+    background: var(--bg-nav);
+    margin-bottom: 1rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0 0);
+    color: var(--text);
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.dropdown {
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    background: var(--bg-dropdown);
+    z-index: 2;
+    border-top: 2px solid var(--border-color);
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    box-shadow:var(--border-color) 0px 0.175em 0.5em;
+    transform: translateX(-40%);
+
+    transition: opacity .15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown{ /*when an item inside the dropdown is focused the opacity is changed*/
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.dropdown-item a:before {
+    content: '';
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+}
+
+.dropdown-item a#dark:before  {
+    background: var(--gray6);
+}
+.dropdown-item a#solarize:before  {
+    background: var(--yellow);
+}
+.dropdown-item a#light:before  {
+    background: var(--gray0);
+}
+/*theme switching*/
+
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --green: mediumspringgreen;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565; 
+}
+
+.light {
+    --bg: var(--gray0);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+    --bg-dropdown: var(--gray0);
+    --text: var(--gray6);
+    --border-color: var(--blue);
+    --bg-solar: var(--yellow);
+}
+
+.dark {
+    --bg: var(--gray6);
+    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray0);
+    --border-color: var(--green);
+    --bg-solar: var(--blue);
+}
+
+.solarize {
+    --gray0: #fbffd4;
+    --gray1: #f7f8d0;
+    --gray2: #b6f880;
+    --gray3: #5ec72d;
+    --gray4: #3ea565;
+    --gray5: #005368;
+    --gray6: #003d4c;
+}
+
+img:hover {
+    animation: cr 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cr{
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* scrollbar styling chrome, edge, safari*/
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gray1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray4);
+    border: 1gpx solid var(--gray1);
+    border-radius: 20px;
+}
+
+/*highlight style*/
+
+::selection {
+    background: var(--border-color);
+}
+
+/*stevedynamics link*/
+.stevedynamics {
+    color: var(--border-color);
+    font-weight: 700;
+}
+
+.stevedynamics:hover {
+   text-decoration: underline;
+}
+
+.stevedynamics:active {
+    color: var(--purple);
+}
