@@ -12,9 +12,6 @@ body {
 }
 
 
-/* TODO:ADD MEDIA QUERY */
-
-
 /* Section title */
 .section-title {
     box-shadow:10px 5px 5px #1a1a1a;
@@ -32,28 +29,73 @@ body {
 
 /* nav */
 #logo {
-    margin-left: 100px;
+    margin-left: 20px;
     /*change to max width and height when high quality logo is added*/
     width: 250px;
     height: 58px;
     margin-top: 5px;
 }
 
-nav {
+.navbar {
     height: 70px;
-    position: static;
-    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar-nav {
+    display: flex;
+}
+
+/* dropdown */
+.dropdown {
+    position:absolute;
+    
+    
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.801);
+    
+    border-top: 2px solid #46a4e7;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    margin-top: 3.1rem;
+    padding: 0.5rem;
+    align-items: center;
+
+    box-shadow: #46a4e7 0px 0.175em 0.5em;
+    transform: translateX(-31%);
+    
+
+    transition: opacity .15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown {
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    padding-left: 10px;
 
 }
 
-
+ul {
+    list-style-type: none;
+}
 nav a{
     float: right;
-    padding: 10px;
     list-style: none;
     margin-right: 80px;
     font-size: 1.5rem;
-    margin-top: 10px;
     font-family: Georama;
     text-decoration:none;
     transition: all .2s ease-in-out;
@@ -250,3 +292,30 @@ footer {
     
 }
 
+/*media queries*/
+@media only screen and (max-width: 1184px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .navbar-nav {
+       display: none;
+   }
+}
+
+/*scrollbar styles for other browsers*/
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gray1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #95c3e4;
+    border: px solid white;
+    border-radius: 20px;
+}

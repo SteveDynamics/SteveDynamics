@@ -7,7 +7,7 @@
     
 }
 
-main h2{
+.founder-container h2{
     font-family: Georama;
     font-size: 2.6rem;
     font-weight: 400;
@@ -41,7 +41,7 @@ main h2{
     border: 3px solid rgb(255, 0, 98);
     border-radius: 100%;
     
-    animation: color-rotate 1s;
+    animation: color-rotate 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
