@@ -14,7 +14,6 @@ if(theme) {
 
 }
 
-
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
     localStorage.setItem('theme', 'dark');
