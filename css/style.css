@@ -226,7 +226,6 @@ a.learn-more-btn:hover {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .p-box {
@@ -236,7 +235,6 @@ a.learn-more-btn:hover {
     max-width: 500px;
     margin: 15px;
     transition: all .3s ease-in-out;
-    
 }
 
 .p-box:hover {
@@ -273,23 +271,40 @@ a.learn-more{
 
 /* footer */
 footer {
-    height: 200px;
+    height: 230px;
     width: 100%;
     background-color:#060e30;
     background-image: linear-gradient(100deg, #060e30,#5aa7de);
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(10, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.col-copyright {
-    grid-area: 4 / 1 / 4 / span 9;
+.bottom-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+#foot-text {
+    color: white;
+    padding-right: 10px;
+}
 
-.bottom-footer{
-    display: inline;
-    vertical-align: bottom;
-    
+#foot-btn {
+    margin: 5px;
+    padding: 11px;
+    height: 11px;
+    width: 80px;
+    margin-right: 800px;
+
+}
+#stovecert {
+    width: 190px;
+    height: 180px;
+    margin: 0;
+    padding: 10px;
 }
 
 /*media queries*/
